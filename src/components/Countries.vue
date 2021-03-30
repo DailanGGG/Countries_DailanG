@@ -15,7 +15,7 @@
     <div class="row">
       <CountryCard
         v-for="country in countries"
-        :key="country.alpha2Code"
+        :key="country.alpha3Code"
         :countries="country"
         class="col col-3"
       ></CountryCard>

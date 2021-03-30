@@ -2,7 +2,15 @@
   <div>
     <img :src="countries.flag" :alt="countries.name" width="100" height="60" />
     <p>
-      <b>{{ countries.name }}</b>
+      <router-link
+          active-class="active-link"
+          :to="{
+            name: 'country-detail',
+            params: { alpha3Code: countries.alpha3Code },
+          }"
+        >
+          <b>{{ countries.name }}</b>
+        </router-link>
     </p>
     <p><b>Population: </b> {{ countries.population }}</p>
     <p><b>Region: </b>{{ countries.region }}</p>

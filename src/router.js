@@ -8,16 +8,16 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [
-        // muestra los countries
         {
             path: '/',
             name: 'Countries',
             component: Countries
         },
         {
-            path: '/:countrie/details',
-            name: 'CountryDetail',
-            component: CountryDetail
+            path: '/:alpha3Code/details',
+            name: 'country-detail',
+            component: CountryDetail,
+            props: true
         }
     ]
 })

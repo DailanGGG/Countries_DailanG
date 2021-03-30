@@ -14,7 +14,7 @@ export default{
         return api.get('/all')
     },
     //Metodo para obtener detalle de país
-    getDetail(url){
-        return api.get('/people/' + url)
+    getDetail(countryCode){
+        return api.get('/alpha/' + countryCode)
     }
 }

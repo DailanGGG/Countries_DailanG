@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <Countries></Countries>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Countries from './components/Countries.vue'
 
 export default {
   name: 'App',
   components: {
-    Countries
+    
   }
 }
 </script>
